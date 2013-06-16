@@ -1,0 +1,86 @@
+<html>
+<title>Connect Registration Page</title>
+<head>
+<link rel="stylesheet" type="text/css" href="reg.css">
+</head>
+<script>
+function validateForm()
+{
+var x=document.forms["myForm"]["email"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+}
+</script>
+<body>
+<form action="pdfphp.php" method="POST">
+<hr/><br/>
+Name:<input type="text" name="name" id="one"><br /><br /><hr/><br/>
+Age:<input type="text" name="age" id="two"> <br /><br /><hr/><br/>
+Email ID: <input type="email" name="mailid" id="three"> <br /><br /><hr/>
+Phone No: <input type="text" name="phone" id="four"> <br /><br /><hr/>
+Objective:</br><hr/><TextArea name="objective" Rows=6 Cols=100> </Textarea><br /><br /><hr/>
+Education:(Only Name Of the Course and Institution, DO NOT MENTION PERCENTAGE)</br><hr/><TextArea  name="education" Rows=6 Cols=100>  </Textarea><br /><br /><hr/>
+Additional Courses:</br><hr/><TextArea   name="courses" Rows=6 Cols=100>  </Textarea><br /><br /><hr/>
+Additional Training:</br><hr/><TextArea   name="training" Rows=6 Cols=100>  </Textarea><br /><br /><hr/>
+
+
+Honors:</br><hr/><TextArea  name="honors" Rows=6 Cols=100> </Textarea><br /><br /><hr/>
+Experience:</br><hr/><TextArea   name="experience" Rows=6 Cols=100> </Textarea><br /><br /><hr/>
+Awards and Recognition:</br><hr/><TextArea   name="awards" Rows=6 Cols=100> </Textarea><br /><br /><hr/>
+Related Activities:</br><hr/><TextArea   name="activities" Rows=6 Cols=100> </Textarea><br /><br /><hr/>
+Volunteer Work:</br><hr/><TextArea   name="volunteer" Rows=6 Cols=100> </Textarea><br /><br /><hr/>
+Community Service:</br><hr/><TextArea   name="communities" Rows=6 Cols=100> </Textarea><br /><br /><hr/>
+Skills:</br><hr/><TextArea   name="skills" Rows=6 Cols=100> </Textarea><br /><br /><hr/>
+Languages:</br><hr/><TextArea   name="language" Rows=6 Cols=100> </Textarea><br /><br /><hr/>
+Certifications:</br><hr/><TextArea   name="certification" Rows=6 Cols=100> </Textarea><br /><br /><hr/>
+Interests:</br><hr/><TextArea   name="interests" Rows=6 Cols=100> </Textarea><br /><br /><hr/><br/>
+Preferred Duration of Working:<input type="text" name="duration" id="five"> <br /><br /><hr/>
+
+
+Choices of Company 1:</br>
+<select name="company1" id="company1">
+  <option value="Maxval">Maxval</option>
+  <option value="Desicrew">Desicrew</option>
+  <option value="Face ">Face </option>
+  <option value="Slum soccer">Slum soccer</option>
+  <option value="Car cares">Car cares</option>
+  <option value="Techzone ">Techzone </option>
+  <option value="Ticketgoose ">Ticketgoose </option>
+  <option value="Effect works">Effect works</option>
+</select></br>
+
+Choices of Company 2:</br>
+<select name="company2" id="company2">
+  <option value="Maxval">Maxval</option>
+  <option value="Desicrew">Desicrew</option>
+  <option value="Face ">Face </option>
+  <option value="Slum soccer">Slum soccer</option>
+  <option value="Car cares">Car cares</option>
+  <option value="Techzone ">Techzone </option>
+  <option value="Ticketgoose ">Ticketgoose </option>
+  <option value="Effect works">Effect works</option>
+</select></br>
+
+Choices of Company 3:</br>
+<select name="company3" id="company3">
+  <option value="Maxval">Maxval</option>
+  <option value="Desicrew">Desicrew</option>
+  <option value="Face ">Face </option>
+  <option value="Slum soccer">Slum soccer</option>
+  <option value="Car cares">Car cares</option>
+  <option value="Techzone ">Techzone </option>
+  <option value="Ticketgoose ">Ticketgoose </option>
+  <option value="Effect works">Effect works</option>
+</select></br>
+
+
+
+<input type="submit" value="Submit" id="sub"><br />
+</form>
+</body>
+</html>

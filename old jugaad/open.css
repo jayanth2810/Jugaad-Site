@@ -1,0 +1,142 @@
+#header
+{
+height:3em;
+width:100%;
+background-color:red;
+}
+#newsname
+{
+background-color:yellow;
+text-align:center;
+}
+#upbar
+{
+height:13.75em;
+width:14em;
+background-color:brown;
+overflow:hidden;
+}
+#middle,#middle1,#middle2,#middle3,#middle4,#middle5
+{
+text-align:center;
+margin-left:12em;
+height:25em;
+width:81.3%;
+background-color:violet;
+}
+#left
+{
+position:absolute;
+height:25em;
+width:12em;
+background-color:black;
+}
+#icons
+{
+margin-top: 10em;
+}
+#leftc1,#leftc2,#leftc3,#leftc4,#leftc5,#leftc6
+{
+padding-top:14.6px;
+text-align:center;
+width:12em;
+height:3em;
+background-color:yellow;
+text-color:black;
+float:left;
+border:2px solid red;
+}
+#updates
+{
+list-style-type:none;
+margin-left:1em;
+text-align:center;
+}
+#sponser
+{
+height:10em;
+width:14em;
+background-color:blue;
+}
+#right
+{
+float:right;
+height:25em;
+margin-top:-35em;
+margin-right:9.5em;
+width:14em;
+background-color:green;
+}
+
+#leftmat
+{
+font-size:2em;
+transform: rotate(-90deg);
+-ms-transform: rotate(90deg); /* IE 9 */
+-webkit-transform: rotate(-90deg); /* Safari and Chrome */
+-o-transform: rotate(-90deg); /* Opera */
+-moz-transform: rotate(-90deg); /* Firefox */
+animation:myfirst infinite 10s;
+-moz-animation:myfirst infinite 10s; /* Firefox */
+-webkit-animation:myfirst infinite 10s; /* Safari and Chrome */
+-o-animation:myfirst infinite 10s; /* Opera */
+}
+@keyframes myfirst
+{
+from {margin-top:-6em;}
+to {
+}
+}
+@-moz-keyframes myfirst /* Firefox */
+{
+from {margin-top:-2em;}
+to {
+margin-top:10em;
+}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {background:red;}
+to {background:yellow;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {background:red;}
+to {background:yellow;}
+}
+#leftname
+{
+margin-top:18em;
+margin-left:7.5em;
+position:absolute;
+height:15em;
+width:3.5em;
+background-color:green;
+overflow:hidden;
+}
+#content
+{
+margin:10em 11em;
+height:25em;
+width:65%;
+background-color:red;
+overflow:hidden;
+}
+#footer
+{
+margin-top:-1%;
+height:2em;
+width:100%;
+background-color:red;
+}
+#logo
+{
+margin:1em;
+position:relative;
+height:6em;
+width:15em;
+background-color:red;
+border-radius:0.2em;
+}

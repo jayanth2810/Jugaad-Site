@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="countdown.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+     $('#gtimer').countdown({
+        date: new Date((new Date).getFullYear()+1, 0, 01),
+        msgNow: 'Happy New Year!!',
+        msgFormat: '%d [day|days] %hh %mm and %ss',
+     });
+  });
+</script>
+<style>
+#gtimer { background:#9BC3DC;color:#fff; margin: 5px auto 5px auto; width: 150px; }
+ 
+#gtimer span.timer_box { padding: 3px;}
+ 
+</style>
+  <title></title>
+</head>
+ 
+<body>
+ 
+<div id="gtimer"></div>
+ 
+</body>
+ 
+</html> 

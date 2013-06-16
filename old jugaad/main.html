@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="styleteam.css">
+<link rel="stylesheet" type="text/css" href="demoteam.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery-css-transform.js"></script>
+<script type="text/javascript" src="rotate3Di.js"></script>
+
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+<!--upper red block-->
+<div id="upper">
+<div id="logo">
+<span id="j">JUGAAD</span><br/>
+<i><span id="ecg">
+Entrepreneurship club of CEG</i></span>
+</div>
+<div id="present">
+<span id="j">CONNECT!</span><br/>
+<i><span id="ecg">
+This March</i></span>
+</div>
+</div>
+<!--upper ends-->
+<div id="leftname"><div id="leftmat">JUGAAD</div></div>
+
+<!--entire centre block-->
+<div id="content">
+<!--left of centre block,yellow color-->
+<div id="left">
+<!--<div id="l1"  align="center"><br />About Jugaad</div>-->
+<button id="l1">Jugaad</button>
+<button id="l2" align="center">Connect</button>
+<button id="l3" align="center">Companies</button>
+<button id="l4" align="center">Register</button>
+<button id="l5" align="center">Team</button>
+<button id="l6" align="center">Contact Us</button>
+</div>
+<!--left of centre block ends-->
+
+<!--middle of centre block,green color-->
+<div id="middle">
+<div id="m1"  align="center"><br /><font color="white">For quite some time, an entrepreneurial wave had been 
+sweeping the Anna university campus. This unbridled energy and a fierce spirit of entrepreneurship 
+among its students gave birth to the idea of an Entrepreneurship Development Club(EDC) at Anna university.
+The EDC at Anna university was established under the auspices of the Centre for entrepreneurship development 
+comprising of students from CEG,ACT,SAP and DOM. 
+<br />In 2010, the entire team got together and set the tone for things to follow, by rechristening the club as “JUGAAD”. 
+The word symbolically captures the entrepreneurial attitude of “looking for a way around” for all the problems.
+</font>
+</div>
+<div id="m2" align="justify"><br /><font color="white">A Company’s most valuable asset is its human resource.<br/> 
+There are plenty of smart,hardworking people out there but the people you need to take a long bumpy ride are those who can face real world problems.
+ The ultimate challenge lies in choosing the right person for the right job.<br/>
+In many cases, the best candidates on paper may not be the best fit for a new business. Here passion supersedes skill-set.
+ ‘Connect!’ is an exclusive platform where it conjoins the 21st century revolutionists- The entrepreneurs and the torch-bearers of tomorrow- the  students. 
+ It’s a unique opportunity provided for all the students, where they get a face-off with the company’s representatives, 
+ a chance to express their talents with no bars on their academics. 
+When you find the right person. Set the sails of your ship right, catch the trade winds and sail away for the safe harbor.</font>  
+</div>
+<div id="m3"><img src="flipkartlogo.png" id="c1"/></div>
+<div id="m4" align="center"><br /><font color="white">Fourth</font></div>
+
+
+<div id="m5">
+			<ul class="mh-menu">
+				<li><a href="#"><span>President</span> <span>Nivesh</span></a><img src="s1.jpg" alt="image01"/></li>
+				<li><a href="#"><span>Vice President</span> <span>Mahesh</span></a><img src="s2.jpg" alt="image02"/></li>
+				<li><a href="#"><span>Front end</span> <span>Jayanth<br>Prashanth<br>Vivek</span></a><img src="s3.jpg" alt="image03"/></li>
+				<li><a href="#"><span>Back end</span> <span>Giri<br>Kalyan<br>Karthick Raja</span></a><img src="s4.jpg" alt="image04"/></li>
+			</ul>
+</div>
+
+
+
+<div id="m6" align="center"><br /><font color="white">Feel free to contact us:<br/> Nivesh jain: 9940503388<br/> Email : nivjain@aol.com</font></div>
+
+
+
+</div>
+<!--middle of centre block ends-->
+
+<!--right of centre block,orange color-->
+<div id="right">
+
+<div id="r1">
+<div id="txt1" align="center"><font color="white">UPDATES</font></div>
+
+<ul id="updatedown">
+<li><font color="white">KEEP IN TOUCH <br>WITH THE SITE<br/></font></li>
+<li><font color="white">JUGAAD presents CONNECT<br/></font></li>
+<li><font color="white">Seize<br>the<br>OPPORTUNITY<br/></font></li>
+<li><font color="white">CONNECT event date<br>to be announced soon<br/></font></li>
+</ul>
+
+</div>
+
+<div id="r2">
+<div id="txt2" align="center"><font color="white">SPONSORS</font></div>
+
+<ul id="sponsordown">
+<li><img src="flipkart2.jpg"  /></li>
+<li><img src="flipkart.jpg"  /></li>
+<!--<li><img src="s3.jpg" /></li>
+<li><img src="s4.jpg"  /></li>
+<li><img src="s5.jpg"  /></li>-->
+</ul>
+</div>
+
+</div>
+<!--right of centre block ends-->
+
+</div>
+<div id= "footer">
+</div>
+
+<script>
+$(document).ready(function(){
+	
+	$("#updatedown").cycle({ 
+    fx:      'scrollDown', 
+    delay:   -4000,
+	pause: 1
+	
+});
+
+	
+	
+
+	$("#l1").click(function() {
+			var linkText = $(this).text();
+			$('#leftmat').html(linkText);
+			$("#m1").css("margin-top","0em");
+			
+        });
+	$("#l2").click(function() {
+			var linkText = $(this).text();
+			$('#leftmat').html(linkText);
+			$("#m1").css("margin-top","-25em");
+        });
+		$("#l3").click(function() {
+			var linkText = $(this).text();
+			$('#leftmat').html(linkText);
+			$("#m1").css("margin-top","-50em");
+			
+			
+        });
+
+		$("#l4").click(function() {
+			var linkText = $(this).text();
+			$('#leftmat').html(linkText);
+			$("#m1").css("margin-top","-75em");
+			
+        });
+
+		$("#l5").click(function() {
+			var linkText = $(this).text();
+			$('#leftmat').html(linkText);
+			$("#m1").css("margin-top","-100em");
+        });
+		$("#l6").click(function() {
+			var linkText = $(this).text();
+			$('#leftmat').html(linkText);
+			$("#m1").css("margin-top","-125em");
+        });
+		
+		$("#sponsordown").cycle({ 
+		fx:      'fade', 
+		delay:   -4000,
+		pause: 1
+		
+		
+	
+});
+
+$('#j').hide(1).delay(1).show(1);
+$('#ecg').hide(1).delay(1).show(1);	
+
+
+function sample(){
+$('#logo').delay(4000).fadeOut(1000).delay(2000).fadeIn(1000);
+$('#present').hide(1).delay(4000).fadeIn(1000).delay(2000).fadeOut(1000);
+window.setTimeout(function(){sample()},4500)
+}
+sample()
+
+
+});
+</script>
+</body>
+</html>
+

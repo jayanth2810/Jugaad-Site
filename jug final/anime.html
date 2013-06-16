@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<link rel="stylesheet" type="text/css" href="anime.css">
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery-css-transform.js"></script>
+<script type="text/javascript" src="rotate3Di.js"></script>
+
+<div id="one">
+</div>
+
+<script>
+
+$(document).ready(function(){
+	
+	
+	function start()
+	{
+		$("#one").rotate3Di('toggle','slow','clockwise');
+		window.setTimeout(function(){start()},2000)
+	}
+	start()
+	
+});
+	
+	
+
+</script>
+</html>

@@ -1,0 +1,28 @@
+.imgcatalogo {
+  position: absolute;
+}
+#website_catalogo{
+  left: 2%;
+  z-index: 0;
+}
+#software_catalogo {
+  left:50%;
+  margin-left: -100px;
+  z-index: 1;
+}
+#marketing_catalogo{
+  left:98%;
+  margin-left: -200px;
+  z-index: 2;
+}
+#image_catalogo {
+  width: 240px;
+  height: 500px;
+  float:left;
+  text-align:center;
+}
+.catalogo-text {
+  position:absolute;
+  z-index: -1;
+  padding-left: 250px;
+}

@@ -1,0 +1,168 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="open.css">
+<link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div id="back"><img src="2.png"/></div>
+<div id="back1"><img src="1.png" /></div>
+<div id="back2"><img src="3.png"/></div>
+<div id="back3"><img src="4.png"/></div>
+<div id="back4"><img src="5.png"/></div>
+<div id="back5"><img src="6.png" /></div>
+<div id="back6"><img src="7.png"/></div>
+<div id="leftname"><div id="leftmat">AFLeague</div></div>
+<div id="header">
+<div id="soon"> <span id="thismarch">This<br/> March</span></div>
+<div id="logo">
+<span id="j">A.F.L</span><br/>
+<span id="ecg">
+<i><b>where you need to be ...</b></i></span>
+</div>
+</div>
+<div id= "content">
+<div id="left">
+<div id="leftc1">About</div>
+<div id="leftc2">Teams</div>
+<div id="leftc3">Schedule</div>
+<div id="leftc4">Points Table</div>
+<div id="leftc5">Achievements</div>
+<div id="leftc6">Alumni Corner</div>
+</div>
+<div id="middle">content for display</div>
+<div id="middle1">To be updated... Stay tuned.!!!</div>
+<div id="middle2">To be updated... Stay tuned.!!!</div>
+<div id="middle3">To be updated... Stay tuned.!!!</div>
+<div id="middle4">To be updated... Stay tuned.!!!</div>
+<div id="middle5">To be updated... Stay tuned.!!!</div>
+
+</div>
+<div id="right">
+<div id="newsname">
+UPDaTES
+</div>
+<div id="upbar">
+<ul id="updates">
+<li><b>LEAGUE</b><br/>
+Anna Football League<br/>
+is all set to kick start soon <br/>
+Stay tuned !!</li>
+<li><b>AUCTION</b> <br/>
+Auction of player <br/>
+for Anna Sports league <br /> set to begin <br /> in the first week of March </li>
+<li><b>LEAGUE</b><br/>Captains announced<br/> Team names yet to be <br/>decided<br/>  
+</li>
+<li><b>LEAGUE</b> <br/>
+Players are requested <br/> to fill in the <br/> Registration forms <br/> asap
+</li>
+</ul>
+</div>
+<div id="sponser">
+<div id ="container">
+	<div id="slideshow">
+			<ul id="slides">
+			<li><img src="s1.jpg" height="180" width="200" /></li>
+			<li><img src="s2.jpg" height="180" width="200"/></li>
+			<li><img src="s3.jpg" height="180" width="200"/></li>
+			<li><img src="s4.jpg" height="180" width="200"/></li>
+			<li><img src="s5.jpg" height="180" width="200"/></li>
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+
+<div id= "footer">
+</div>
+<script>
+
+$(document).ready(function(){
+$('#j').hide(1).delay(1).show(1);
+$('#ecg').hide(1).delay(1).show(1);	
+
+
+function sample(){
+//$('#j').delay(4000).fadeOut(1000).delay(2000).fadeIn (1000);
+//$('#ecg').delay(4000).fadeOut(1000).delay(2000).fadeIn(1000);
+$('#logo').delay(4000).fadeOut(1000).delay(2000).fadeIn(1000);
+$('#soon').hide(1).delay(4000).fadeIn(1000).delay(2000).slideUp(1000);
+window.setTimeout(function(){sample()},4500)
+}
+sample()
+
+$('#updates').cycle({ 
+    fx:      'scrollDown', 
+    delay:   -4000 
+});
+
+
+
+	$("#leftc1").click(function() {
+			var linkText = $(this).text();
+			$('#leftmat').html(linkText);
+			$("#middle").show(1000);
+			
+        });
+	$("#leftc2").click(function() {
+			var linkText = $(this).text();
+			$("#middle").hide(1000);
+			$('#middle1').show(1000);
+            $('#leftmat').html(linkText);
+			
+			});
+	$("#leftc3").click(function() {
+	var linkText = $(this).text();
+            $("#middle").hide(1000);
+			$("#middle1").hide(1000);
+			$("#middle2").show(1000);
+			$('#leftmat').html(linkText);
+			
+        });
+	$("#leftc4").click(function() {
+	var linkText = $(this).text();
+			 $("#middle").hide(1000);
+			$("#middle1").hide(1000);
+			 $("#middle2").hide(1000);
+			$("#middle3").show(1000);
+			$('#leftmat').html(linkText);
+        });
+	$("#leftc5").click(function() {
+	var linkText = $(this).text();
+           $("#middle").hide(1000);
+			$("#middle1").hide(1000);
+			 $("#middle2").hide(1000);
+			$("#middle3").hide(1000);
+			$("#middle4").show(1000);
+			$('#leftmat').html(linkText);
+        });
+	$("#leftc6").click(function() {
+	var linkText = $(this).text();
+           $("#middle").hide(1000);
+			$("#middle1").hide(1000);
+			 $("#middle2").hide(1000);
+			$("#middle3").hide(1000);
+			$("#middle4").hide(1000);
+			$("#middle5").show(1000);
+			
+			$('#leftmat').html(linkText);
+        });
+	$("#slideshow").css("overflow","hidden");
+	$("ul#slides").cycle({
+		fx:'fade',
+		pause:1,
+		prev:'#prev',
+		next:'#next'
+		});
+		$("#slideshow").hover(function(){
+			$("ul#nav").fadeIn();
+			},
+			function(){
+			$("ul#nav").fadeOut();
+			});
+	});
+</script>
+</body>
+</html>

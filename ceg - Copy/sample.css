@@ -1,0 +1,50 @@
+.circular1 ,.circular2,.circular3,.circular4,.circular5
+{
+	width: 150px;
+	height: 150px;
+	margin-top:20em;
+	margin-left:4.5em;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-border-radius: 99em;
+	-moz-border-radius: 99em;
+	border-radius: 99em;
+	border: 5px solid #eee;
+	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+	display:inline-block;/*to set more than one div on same line*/
+	
+	}
+	
+.circular1
+{	
+background-position: center center;
+background: url(home.jpg) no-repeat;
+}
+
+.circular2
+{	
+background-position: center center;
+background: url(department.jpg) no-repeat;
+}	
+
+.circular3
+{	
+background-position: center center;
+background: url(faculty.jpg) no-repeat;
+}	
+.circular4
+{	
+background-position: center center;
+background: url(AboutUs.jpg) no-repeat;
+}	
+.circular5
+{	
+background-position: center center;
+background: url(About_Us.jpg) no-repeat;
+}	
+
+body
+{
+background-image: url(bg11.jpg);
+}

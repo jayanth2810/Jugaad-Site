@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it" xml:lang="it">
+<link rel='stylesheet' href='ceg.css' type='text/css' />
+<head>
+
+	<script type="text/javascript" src="http://www.webair.it/javascripts/jquery/jquery.js"></script>
+    <script type="text/javascript" src="http://www.webair.it/javascripts/jquery/application.js"></script>
+    <script type="text/javascript" src="http://www.webair.it/javascripts/jquery/jquery.scrollable-1.0.2.js"></script>
+    <script type="text/javascript" src="http://www.webair.it/javascripts/jquery/jquery.mousewheel.js"></script>
+	
+	
+</head>
+<body>
+ <div id="catalogo_description">
+    <div id="image_catalogo">
+    <img src="About_Us.jpg" class="imgcatalogo" align="middle" alt="Marketing" title="Marketing" name="Marketing" id="marketing_catalogo"/>
+    <img src="au.jpg" class="imgcatalogo" align="middle" alt="Web Site" title="Web Site" name="Web Site" id="website_catalogo"/>
+    <img src="AboutUs.jpg" class="imgcatalogo" align="middle" alt="Software" title="Software" name="Software" id="software_catalogo" />
+  </div>
+  <div id="marketing-text" class="catalogo-text" style="display:none;">Section 1 Marketing</div>
+  <div id="website-text" class="catalogo-text" style="display:none;">Section 2 Web Site</div>
+  <div id="software-text" class="catalogo-text" style="display:none;">Section 3 Software</div>
+</div>
+
+
+
+<script type="text/javascript">
+  var detailed = false;
+  var interrupt;
+  $('.imgcatalogo').click(function() {
+    if (detailed == false) {
+      detailed = true;
+      clearTimeout ( interrupt );
+      $(".imgcatalogo:not(#" + $(this)[0].id + ")").animate({
+        left: '2%',
+        marginLeft: '0px'
+      }, 1500 );
+      $(".imgcatalogo:not(#" + $(this)[0].id + ")").slideUp();
+      $(this).animate({
+        left: '2%',
+        marginLeft: '0px'
+      }, 3000 );
+      interrupt = setTimeout(' $("#' + $(this)[0].id.replace("_catalogo", "-text") +'").slideDown("fast")', 3000);}
+    else {
+      detailed = false;
+      clearTimeout ( interrupt );
+      $('.catalogo-text').slideUp();
+      $(".imgcatalogo:not(#" + $(this)[0].id + ")").slideDown("fast");
+      $("img#marketing_catalogo").animate({
+        marginLeft: '-200px',
+        left: '98%'
+      }, 1500 );
+      $("img#website_catalogo").animate({
+        left: '2%'
+      }, 1500 );
+      $("img#software_catalogo").animate({
+        left: '50%',
+        marginLeft: '-100px'
+      }, 1500 );
+      $(".imgcatalogo").slideDown("fast");
+    }
+  });
+</script>
+</body>
+</html>

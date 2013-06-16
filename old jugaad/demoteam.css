@@ -1,0 +1,25 @@
+/* CSS reset */
+body,div,ul,ol,li{ 
+	margin:0;
+	padding:0;
+}
+html,body {
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+ol,ul {
+	list-style:none;
+}
+
+/* General Demo Style */
+a{
+	color: #333;
+	text-decoration: none;
+}
+#m5{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+}
